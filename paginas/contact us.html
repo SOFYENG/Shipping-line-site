@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es-ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--css-->
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title> contact us </title>
+</head>
+
+<body>
+    <!--HTML SEMANTICA -->
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="./booking.html">booking</a>
+        <a href="./paginas/shipping lines.html">Shipping lines</a>
+        <a href="./paginas/track.html">track</a>
+        <a href="#">contact us</a>
+        <!--Enlace de navieras para busqueda por shipping lines-->
+        <a target="_blank" href="//www.one-line.com/en">shipping line one</a>
+    </nav>
+
+    <main>
+        <form action="procesar.php" method="post">
+
+            <!--Input Nombre-->
+            <div>
+                <label for="Nombre">Nombre:</label>
+                <input type="text" name="nombre" placeholder="Sofia">
+            </div>
+
+            <!--Input Apellido-->
+            <div>
+                <label for="Apellido">Apellido:</label>
+                <input type="text" name="Apellido" placeholder="Perez">
+            </div>
+            <!--input email-->
+            <div>
+                <label for="mail">mail:</label>
+                <input type="email" name="@mail" placeholder="hola@hotmail.com">
+            </div>
+
+            <!--input usuario-->
+            <div>
+                <label for="usuario">usuario:</label>
+                <input type="usuario" name="usuario">
+            </div>
+
+            <!--input password-->
+            <div>
+                <label for="Password">Password:</label>
+                <input type="password" name="password" required>
+            </div>
+
+            <!--radio-->
+            <h3>Seleccione su género</h3>
+
+            <div>
+                <label for="género">Femenino</label>
+                <input type="radio" name="genero " value="Femenino">
+            </div>
+
+            <div>
+                <label for="género">Masculino</label>
+                <input type="radio" name="genero " value="Masculino">
+            </div>
+
+            <div>
+                <label for="género">No define</label>
+                <input type="radio" name="genero " value="No define">
+            </div>
+
+            <h3>Comentarios</h3>
+            <textarea name="Comentarios" id="" cols="30" rows="10"></textarea>
+
+            <div>
+                <button type="submit">Enviar</button>
+            </div>
+            <button type="reset">Borrar</button>
+
+        </form>
+    </main>
+
+</body>
+
+</html>

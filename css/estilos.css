@@ -1,0 +1,212 @@
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+header {
+    background-color: #B138B3;
+    height: 117px;
+    color:white;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h1 {
+    padding-top: 45px;
+
+}
+
+/* in the box model we have: 
+ padding - space INSIDE the box  
+ margin - space AROUND the box */
+h2{
+    background-color: blue;
+    color: azure;
+    border: 3px solid black;
+
+    padding: 24px;
+    margin: 50px;
+}
+
+ul {
+    padding: 0;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-left: 5px;
+    text-align: center;
+}
+
+li {
+    display: inline;
+    margin: 12px;
+    padding-left: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-right: 8px;
+    background-color: bisque;
+}
+
+/* flexbox*/
+/*contenedor padre*/
+.flex-container{
+/*activamos flex*/
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: normal;
+
+
+    border: 5px solid #B138B3;
+    background-color: bisque;
+    padding: 20px;
+    margin: 20px;
+}
+.caja{
+    /*box modeling*/
+width: 200px;
+height: 200px;
+border: 1px solid #ccc;
+background-color: beige;
+margin: 5px;
+    padding: 24px;
+
+    /*tipografia*/
+    color: black;
+
+}
+
+.c1{
+    background-color: rgb(126, 108, 86);
+}
+
+.c2{
+    background-color: rgb(94, 94, 178);
+}
+
+.c3{
+    background-color: #640a66;
+}
+
+.tracking-field {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 8px;
+}
+
+.tracking-number {
+    margin-top: 60px;
+}
+
+.shipping-line {
+    margin-top: 8px;
+}
+
+.track-button {
+    margin-top: 8px;
+    float: right;
+}
+
+
+/*CSS GRID PRACTICA*/
+.header{ 
+    text-align: center;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+
+    /*tipografia*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    padding: 20px;
+}
+
+.Shippings
+{
+    /* para activar el grid. on the PARENT */
+    display: grid;
+    /* para definir las columnas */
+    grid-template-columns: 1fr;
+    gap: 8px;
+
+
+    text-align: left;
+    width: 90%;
+    max-width: 1000px;
+    border: 10px solid #f30d88;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-size: 25px;
+    text-align: center;
+}
+
+/* cuando el browser es 600px y mas */
+@media (min-width: 380px) and (max-width: 980px) {
+    .Shippings {
+        border-color: purple;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 980px) {
+    .Shippings {
+        border-color: purple;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+
+.Shippings > div {
+    display: block;
+    border: 1px solid #ccc; 
+    padding: 86px 6px 6px 6px;
+    background-size: cover;
+    color:white;
+}
+
+.Shippings .maersk {
+    background-image: url(../assets/img/maersk.jpg)
+}
+
+.Shippings .cosco {
+    background-image: url(../assets/img/cosco.jpg)
+}
+
+.Shippings .evergreen {
+    background-image: url(../assets/img/evergreen.jpg)
+}
+
+.demo {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 150px 300px 100px;
+    gap: 10px;
+}    
+
+.demo .header { 
+    background-color: purple;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.demo .navbar {
+    background-color: lime;
+}
+
+.demo .main {
+    background-color: pink;
+}
+
+.demo .aside {
+    background-color: crimson;
+}
+
+.demo .footer {
+    background-color: honeydew;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
