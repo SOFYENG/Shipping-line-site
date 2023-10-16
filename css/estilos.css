@@ -179,6 +179,25 @@ margin: 5px;
     background-image: url(../assets/img/evergreen.jpg)
 }
 
+.Shippings .one {
+    background-image: url(../assets/img/ONE.jpg);
+}
+
+.Shippings .happagloyd {
+    background-image: url(../assets/img/hapag\ loyd.jpg);
+}
+
+.Shippings .hmm {
+    background-image: url(../assets/img/hmm.jpg);
+}
+
+.Shippings .cma {
+    background-image: url(../assets/img/cma.jpg);
+}
+
+.Shippings .yangming {
+    background-image: url(../assets/img/yang.jpg);
+}
 .demo {
     margin-top: 60px;
     display: grid;
